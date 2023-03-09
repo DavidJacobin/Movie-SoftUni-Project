@@ -3,6 +3,7 @@
     height: 500px;
     color: white;
     object-fit: contain;
+    background-size:calc();
 }
 
 .banner__content{
