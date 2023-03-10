@@ -35,16 +35,29 @@ img {
 }
 
 .landing {
-    
     width: 100%;
     height: 100vh;
     position: relative;
     background: url('../images/back.jpg') no-repeat center center/cover;
 }
 
+.landing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background:rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+
 .landingScreen__showcaseTop {
     position: relative;
     height: 90px;
+    z-index: 2;
 }
 
 .landingScreen__showcaseTop img {
@@ -59,7 +72,8 @@ img {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate(-50%, -50%);   
+    transform: translate(-50%, -50%); 
+      
 }
 
 .landingScreen__content {
@@ -71,6 +85,7 @@ img {
     align-items: center;
     text-align: center;
     margin-top: 9rem;
+    z-index: 2;
 }
 
 .landingScreen__content h1 {
