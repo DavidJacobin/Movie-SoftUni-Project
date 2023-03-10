@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #e50914;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #999;
+}
+
+h1,h2,h3,h4 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+
+}
+
+img {
+    width: 100%;
+}
+
+.landing {
+    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('../images/back.jpg') no-repeat center center/cover;
+}
+
+.landingScreen__showcaseTop {
+    position: relative;
+    height: 90px;
+}
+
+.landingScreen__showcaseTop img {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.landingScreen__showcaseTop a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);   
+}
+
+.landingScreen__content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.landingScreen__content h1 {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 5.1rem;
+    margin-bottom: 0 0 10rem;
+
+}
+
+.landingScreen__content p {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 3.25;
+    margin: 0 0 1rem;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #e50914;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn__rounded {
+    border-radius: 5px;
+}
+
+.btn__xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+    text-transform: uppercase;
+}
+
