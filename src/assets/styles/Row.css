@@ -1,6 +1,11 @@
 .row {
     color: white;
     margin-left: 20px;
+    
+}
+
+.sliderArrow{
+    size: 100px;        
 }
 
 
@@ -33,4 +38,10 @@
 
 .row__largePoster {
     max-height: 400px;
+}
+
+
+
+.sliderArrow {
+    height: 200px;
 }
